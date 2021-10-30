@@ -1,0 +1,162 @@
+.signUp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Main Rectangle Template */
+.rectangle_template
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+    
+    background: #FCDADA;
+}
+
+/* Sign Up Template */
+.signup_template
+{
+    position: absolute;
+    width: 50%;
+    height: 80%;
+    left: 25%;
+    top: 10%;
+
+    background: #FFFFFF;
+
+    border-radius: 15%;
+
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+
+    font-size: 200%;
+    line-height: 300%;
+    text-align: center;
+
+    color: #000000;
+}
+
+.title
+{
+    position: absolute;
+    width: 20%;
+    height: 10%;
+    left: 2%;
+    top: 0%;
+
+    background: #F18484;
+
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 200%;
+    line-height: 200%;
+    text-align: center;
+
+    color: #000000;
+}
+
+
+/* First Name */
+.first_name_input
+{
+    position: absolute;
+    width: 28%;
+    height: 5%;
+    left: 55%;
+    top: 32%;
+    transform: translate(-50%, -50%);
+
+    background: #C0ABAB;
+}
+
+
+/* Last Name */
+.last_name_input
+{
+    position: absolute;
+    width: 28%;
+    height: 5%;
+    left: 55%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+
+    background: #C0ABAB;
+}
+
+
+/* Username */
+.username_input
+{
+    position: absolute;
+    width: 28%;
+    height: 5%;
+    left: 55%;
+    top: 58%;
+    transform: translate(-50%, -50%);
+
+    background: #C0ABAB;
+}
+
+
+/* Password */
+.password_input
+{
+    position: absolute;
+    width: 28%;
+    height: 5%;
+    left: 55%;
+    top: 71%;
+    transform: translate(-50%, -50%);
+
+    background: #C0ABAB;
+}
+
+
+/* Password Confirm */
+.password_confirm_input
+{
+    position: absolute;
+    width: 28%;
+    height: 5%;
+    left: 55%;
+    top: 71%;
+    transform: translate(-50%, -50%);
+
+    background: #C0ABAB;
+}
+
+
+/* Submit Button */
+.submit_button
+{
+    position: absolute;
+    width: 8%;
+    height: 5%;
+    left: 42%;
+    top: 68%;
+    transform: translate(-50%, -50%);
+
+    background: #E16161;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 135%;
+    line-height: 120%;
+    color: #000000;
+}
+
+.forgot {
+    position: relative;
+    right:-2px;
+    text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+    color: #F99090;
+    padding-top: 15px;
+  }

@@ -1,0 +1,717 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Main page</title>
+  <meta charset="utf-8">
+</head>
+
+<style>
+  body {
+    position: relative;
+    top: 17px;
+    left: 1px;
+  }
+
+
+  .ltop {
+    display: inline-block;
+    margin-top: 40px;
+    margin-left: 145px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #c62917
+  }
+
+  .top {
+    width:200%;
+    position: absolute;
+    display: inline;
+    line-height: 5px;
+    list-style: none;
+    color: #666;
+    font-family: 'source_sans_proregular';
+    font-size: 12px;
+    letter-spacing: -0.5px;
+    display: list-item;
+    margin-left: 279px;
+  }
+
+
+  .top li {
+    float: left;
+    text-align: center;
+    margin-left: 50px
+  }
+
+  .wrap {
+    box-sizing: border-box;
+    font-size: 10;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    overflow-x: auto;
+    display: block;
+  }
+
+
+  .card li {
+    border: 1px solid #d6d6d6;
+    border-radius: 3px;
+    float: left;
+    text-align: center;
+    font-size: 12px;
+    padding: 4px;
+    letter-spacing: normal;
+    width: 60px;
+    margin-right: 5px;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 129px;
+    top: 283px;
+
+
+  }
+
+  a {
+    text-decoration: none;
+    color: #666;
+  }
+
+
+
+
+  .top a {
+    position: absolute;
+    display: inline;
+    text-decoration: none;
+    color: #666;
+    padding: 14px 20px 14px 20px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    margin-right: -20px;
+    position: relative;
+    top: -10px;
+    line-height: 25px;
+    color: #737373;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: normal;
+    font-weight: bold;
+  }
+
+  .account {
+    position: relative;
+    padding: 20px 0;
+    box-sizing: border-box;
+    font-size: 0;
+    left:980px;
+    top:15px;
+
+
+  }
+
+  .account img {
+    width: 25px;
+    height: 25px;
+    margin-right: 18px;
+  }
+
+
+  h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+  }
+
+
+  li {
+    float: left;
+    color: #666;
+    font-family: 'source_sans_proregular';
+    font-size: 12px;
+    letter-spacing: -0.5px;
+    list-style: none;
+  }
+
+  span.top>li {
+    margin-left: 60px;
+  }
+
+  img {
+    display: inline;
+    width: 60px;
+    border-radius: 4px;
+  }
+
+
+  .card {
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+    color: #666;
+    padding-top: 25px;
+    display: block;
+    margin-left: 157px;
+    margin-top: 50px;
+    border: 4px solid #e3e3e3;
+    width: 169px;
+    height: 230px;
+    border-width: 1px;
+    background-color: #FBFBFB;
+  }
+
+
+  .card p {
+    margin-top: 12px;
+    margin-bottom: -5px;
+    font-size: 15px;
+  }
+
+  .nickname {
+    font-weight: bold;
+    font-size: 40px;
+    color: #1F1F1F;
+
+  }
+
+  .boardmain {
+    border-top: 1px solid red;
+    margin-top: 30px;
+  }
+
+
+  table {
+    border: 1px solid #e3e3e3;
+    border-collapse: collapse;
+    width: 297px;
+    font-family: 'source_sans_proregular';
+    font-size: 14px;
+    margin-left: -7px;
+    letter-spacing: 0px;
+    float: left;
+    table-layout: fixed;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .main {
+    position: relative;
+    left: 350px;
+    top: -230px;
+  }
+
+  .b {
+    position: absolute;
+    left: -159px;
+  }
+
+  .c {
+    position: absolute;
+    left: -159px;
+    top: 207px;
+  }
+
+  .d {
+    position: absolute;
+    left: -464px;
+    top: 207px;
+  }
+
+  .e {
+    position: absolute;
+    left: -159px;
+    top: 414px;
+  }
+
+  .f {
+    position: absolute;
+    left: -464px;
+    top: 414px;
+  }
+
+
+  td {
+    border: 1px solid #e3e3e3;
+    padding: 10px;
+  }
+
+
+  .title {
+    font-weight: bold;
+    font-size: 20px;
+    color: #c62917;
+    padding: 11px;
+  }
+
+
+  span.myact>table.info {
+    width: 169px;
+    border: 1px solid #e3e3e3;
+    border-collapse: collapse;
+    font-family: 'source_sans_proregular';
+    font-size: 14px;
+    margin-left: 5px;
+    letter-spacing: 0px;
+    float: left;
+    position: relative;
+    left: -138px;
+    bottom: -8px;
+    background-color: #FBFBFB;
+  }
+
+  span.myact>table.info img {
+    vertical-align: middle;
+  }
+  .right {
+    position: relative;
+    right: 20px;
+  }
+
+  .right1 {
+    position: absolute;
+    left: 630px;
+  }
+
+  .right2 {
+    position: absolute;
+    left: 1030px;
+  }
+
+  .right3 {
+    position: absolute;
+    left: 930px;
+  }
+
+  input {
+    font-size: 14px;
+    position: absolute;
+    top: -229px;
+    left: 540px;
+    width: 297px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid #d6d6d6;
+    background: transparent url(search.png) no-repeat right center;
+    background-size: 40px 40px;
+  }
+
+
+
+  .right2 {
+    position: absolute;
+    top: -186.5px;
+    left: 547px;
+    background-color: #FBFBFB;
+    font-family: "맑은 고딕", 돋움, tahoma;
+  }
+
+  .right3 {
+    position: absolute;
+    top: 6px;
+    left: 547px;
+    background-color: #FBFBFB;
+    font-family: "맑은 고딕", 돋움, tahoma;
+  }
+
+
+  .fc {
+    color: #3744a5;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 11px;
+      background-color: #FBFBFB;
+
+  }
+
+  .fc2 {
+    height: 40.5px;
+  }
+
+.par {
+  font-size: 11px;
+  color: #a6a6a6;
+}
+
+.popularSize {
+  height:50px;
+    background-color: #FBFBFB;
+}
+
+.pop {
+margin-top: -4px;
+margin-bottom: 5px;
+font-size: 12.4px;
+font-weight:bold;
+font-family: "맑은 고딕", 돋움, tahoma;
+}
+.pop1{
+color:#666;
+font-size: 12px;
+font-family: "맑은 고딕", 돋움, tahoma;
+}
+.pop1pic{
+  margin-bottom: -8px;
+}
+.pop1s {
+  position: absolute;
+  left: 20px;
+  top:98px;
+  font-size: 12px;
+color: #c62917;
+}
+
+.pop2s {
+  position: absolute;
+  left: 20px;
+  top:168px;
+  font-size: 12px;
+color: #c62917;
+}
+
+
+.star{
+  margin-top: -2px;
+  margin-bottom: 2px;
+  font-size: 14px;
+  font-weight:bold;
+}
+
+.ltop {
+  text-decoration: none;
+}
+
+
+</style>
+
+
+
+<body>
+  <div>
+    <a href = "first.html" class="ltop">
+      With You
+    </a>
+
+    <span class="top" style ="width:900px">
+      <li><a href="first.html">Board</a></li>
+      <li><a href="calendar.html">Time table</a></li>
+      <li><a href="Lecture.html">Lecture</a></li>
+      <li><a href="gpa.html">GPA calculator</a></li>
+      <li><a href="http://www.facebook.com">Friend</a></li>
+    </span>
+
+    <span class="account">
+      <a href="http://www.google.com"><img src="email.png"></a> <a href="http://www.google.com"><img src="user.png"></a>
+      <span>
+  </div>
+
+  <span class="card">
+    <img src="login.png" class="picture">
+    <p class="nickname">nickname</p>
+    <p class="school">name</p>
+    <p class="school">ID</p>
+    <ul>
+      <li><a href="/my" class="one">My account</a></li>
+      <li><a href="/user/logout" class="two">Log out</a></li>
+    </ul>
+  </span>
+
+
+
+
+
+  <span class="main">
+    <table class="a">
+      <tr>
+        <td class="title">Free bulletin board</td>
+      </tr>
+      <tr>
+        <td>
+     <span style="margin-right: 141.5px">Where to go if sick?</span>
+     <span class = "par">Now</span>
+    </td>
+      </tr>
+      <tr>
+        <td>
+     <span style="margin-right: 85px">Found Air pods in zipcar</span>
+     <span class = "par" >10/22 23:49</span>
+    </td>
+      </tr>
+      <tr>
+        <td>
+     <span style="margin-right: 113px">Driving to chicago?</span>
+     <span class = "par">10/22 20:13</span>
+    </td>
+      </tr>
+      <tr>
+        <td>
+     <span style="margin-right: 126px">I lost my wallet...</span>
+     <span class = "par">10/22 18:09</span>
+    </td>
+      </tr>
+    </table>
+
+    <table class="b">
+      <tr>
+        <td class="title">Alumni board</td>
+      </tr>
+      <tr>
+        <td>
+     <span style="margin-right: 57px">Don't come to this company... </span>
+     <span class = "par">10/23 21:59</span>
+    </td>
+      </tr>
+      <tr>
+        <td>
+     <span style="margin-right: 127px">Graduate school?</span>
+     <span class = "par">10/23 12:33</span>
+    </td>
+      </tr>
+      <tr>
+        <td>
+     <span style="margin-right: 16.6px">Anyone looking for summer interns..</span>
+     <span class = "par">10/22 20:03</span>
+    </td>
+      </tr>
+      <tr>
+        <td>
+     <span style="margin-right: 66px">my life as software engineer</span>
+     <span class = "par">10/22 17:43</span>
+    </td>
+      </tr>
+    </table>
+
+
+    <table class="c">
+      <tr>
+        <td class="title">Hot issues</td>
+      </tr>
+      <tr>
+        <td>
+     <span style="margin-right: 11.6px">Food truck employee points gun at a..</span>
+     <span class = "par">10/23 09:53</span>
+    </td>
+      </tr>
+      <tr>
+        <td>
+     <span style="margin-right: 10.2px">UW-Madison students lining up agai..</span>
+     <span class = "par">10/22 13:33</span>
+    </td>
+      </tr>
+      <tr>
+        <td>
+     <span style="margin-right: 9px">Madison police: Gangs now consider..</span>
+     <span class = "par">10/19 17:23</span>
+    </td>
+      </tr>
+      <tr>
+        <td>
+     <span style="margin-right: 10px">Aprrently, making fake ID'S okay bu..</span>
+     <span class = "par">10/19 13:10</span>
+    </td>
+      </tr>
+    </table>
+
+    <table class="d">
+      <tr>
+        <td class="title">Buy & Sell</td>
+      </tr>
+      <tr>
+        <td>
+     <span style="margin-right: 74px">Selling Michael Kors Shirt</span>
+     <span class = "par">10/22 14:10</span>
+    </td>
+      </tr>
+      <tr>
+        <td>
+     <span style="margin-right: 80px">looking for Cal2 textbook</span>
+     <span class = "par">10/21 17:11</span>
+    </td>
+      </tr>
+      <tr>
+        <td>
+     <span style="margin-right: 126px">selling 350 yeezy</span>
+     <span class = "par">10/21 18:48</span>
+    </td>
+      </tr>
+      <tr>
+        <td>
+     <span style="margin-right: 157px">small table?</span>
+     <span class = "par">10/21 10:49</span>
+    </td>
+      </tr>
+    </table>
+
+
+
+    <table class="e">
+      <tr>
+        <td class="title">Career & Job</td>
+      </tr>
+      <tr>
+        <td>
+     <span style="margin-right: 45px">Facebook 2022 SWE Internship</span>
+     <span class = "par">10/20 13:33</span>
+    </td>
+      </tr>
+      <tr>
+        <td>
+     <span style="margin-right:11.5px">Adobe Research Intern- 2022 Summ..</span>
+     <span class = "par">10/18 16:43</span>
+    </td>
+      </tr>
+      <tr>
+        <td>
+     <span style="margin-right: 55px">Siemens Assoicate Consultant</span>
+     <span class = "par">10/17 11:12</span>
+    </td>
+      </tr>
+      <tr>
+        <td>
+     <span style="margin-right: 10px">Human Resource Internship 2020 Su..</span>
+     <span class = "par">10/16 16:43</span>
+    </td>
+      </tr>
+    </table>
+
+    <table class="f">
+      <tr>
+        <td class="title">Club</td>
+      </tr>
+      <tr>
+        <td>
+     <span style="margin-right: 47px">AI club Guest Speaker Session!</span>
+     <span class = "par">10/13 13:33</span>
+    </td>
+      </tr>
+      <tr>
+        <td>
+     <span style="margin-right:79px">ChesseHacks in 48 hours!</span>
+     <span class = "par">09/24 19:40</span>
+    </td>
+      </tr>
+      <tr>
+        <td>
+     <span style="margin-right: 65px">ML Club Mentoring Session</span>
+     <span class = "par">09/07 08:50</span>
+    </td>
+      </tr>
+      <tr>
+        <td>
+     <span style="margin-right: 96px">Bowling Club Meeting</span>
+     <span class = "par">08/31 23:00</span>
+    </td>
+      </tr>
+    </table>
+
+  </span>
+
+
+
+  <span class="myact">
+    <table class="info">
+      <tr>
+        <td><img src="paragraph.png" style="width:15px; border-radius:0px; margin-right: 8px;">My post</td>
+      </tr>
+      <tr>
+        <td><img src="speechbubble.png" style="width:15px; height:12px; border-radius:0px; margin-right:8px;">My comment</td>
+      </tr>
+      <tr>
+        <td><img src="star.png" style="width:15px; height:13px;border-radius:0px; margin-right:8px;">My clipping</td>
+      </tr>
+    </table>
+  </span>
+
+
+
+
+
+  <span class="right">
+    <form class="search">
+      <input type="text" name="boardsearch" placeholder="Search">
+    </form>
+
+
+    <span class="right2">
+      <table class="rightt2">
+        <tr>
+          <td class="fc">Popular posts</td>
+        </tr>
+        <tr>
+          <td class ="popularSize">
+
+       <div class ="pop">Nick Gym</div>
+       <div class ="pop1">Why the heck there is only 4 bench presses?..</div>
+      <img class = "pop1pic" src="like.png" style="width:12px" </img>
+      <div class = "pop1s">42</div>
+
+
+</td>
+        </tr>
+        <tr>
+          <td class ="popularSize">
+
+       <div class ="pop">I am so tired of school..</div>
+       <div class ="pop1">tbh, I am already so exhausted and don't wa..</div>
+      <img class = "pop1pic" src="like.png" style="width:12px" </img>
+      <div class = "pop2s">37</div>
+</td>
+        </tr>
+
+      </table>
+    </span>
+
+    <span class="right3">
+      <table class="rightt3">
+        <tr>
+          <td class="fc">Course survey</td>
+        </tr>
+        <tr>
+          <td class="fc2">
+            <div class = "star">CS400: Dongwon Nam (0.5/5.0) </div>
+            <div class ="pop1">DO NOT TAKE Nam's class unless you want to </div>
+            <div class = "pop1">learn NOTHING. WORST PROFESSOR EVER I..</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="fc2">
+            <div class = "star">RP & SE 100: Drake Burger (4.3/5.0) </div>
+            <div class ="pop1">Professor Burger is really kind and understand </div>
+            <div class = "pop1">students very well. He is pretty straightforwar..</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="fc2">
+            <div class = "star">MATH 221: Daekyun Kim (5.0/5.0) </div>
+            <div class ="pop1">BEST PROFESSOR EVERY I EVER HAD IN MY L</div>
+            <div class = "pop1">IFE!! if you need to take math, go with Profes..</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="fc2">
+            <div class = "star">PSY 130: Erika Snow (4.3/5.0) </div>
+            <div class ="pop1">Professor Snow can explain well and her class  </div>
+            <div class = "pop1">is always fun! I really enjoyed to have profes..</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="fc2">
+            <div class = "star">MATH 222: Daekyun Kim (5.0/5.0) </div>
+            <div class ="pop1">Best professor ever </div>
+          </td>
+        </tr>
+      </table>
+    </span>
+  </span>
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <title>Sign in</title>
+
+  <style>
+
+  html {
+    height:100%;
+  }
+    body {
+      width:100%;
+      background-color: #FCDADA;
+      font-family: 'Ubuntu', sans-serif;
+    }
+
+    .main {
+      margin-top: -100px;
+      background-color: #FFFFFF;
+      width: 400px;
+      height: 400px;
+      margin: 15em auto;
+      border-radius: 1.5em;
+      box-shadow: 0% 11% 35% 2% rgba(0, 0, 0, 0.14);
+    }
+
+    .sign {
+      position: relative;
+      top:-5%;
+      padding-top: 10%;
+      margin-top:10%;
+      margin-bottom: 0;
+      color: #FA5D56;
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: bold;
+      font-size: 170%;
+    }
+
+    .un {
+      width: 76%;
+      color: rgb(38, 50, 56);
+      font-weight: 700;
+      font-size: 14%;
+      letter-spacing: 1%;
+      background: rgba(136, 126, 126, 0.04);
+      padding: 13% 13%;
+      border: none;
+      border-radius: 30%;
+      outline: none;
+      box-sizing: border-box;
+      border: 2% solid rgba(0, 0, 0, 0.02);
+
+
+      text-align: center;
+
+      font-family: 'Ubuntu', sans-serif;
+    }
+
+
+    form.form1 {
+      padding-top: 0%;
+      /* can adjust distance between signup and search your school */
+    }
+
+
+    .badger {
+      position: relative;
+      left:30%;
+      bottom: 0%;
+    }
+
+
+    
+
+    .submit:hover {
+      box-shadow: 0 2% 4% 0 rgba(0, 0, 0, 0.50);
+    }
+
+    .submit a {
+      color: #fff;
+      text-decoration:none; 
+    }
+
+    a {
+      position:absolute;
+      left:44%;
+ 
+      text-shadow: 0% 0% 3% rgba(117, 117, 117, 0.12);
+      color: #F99090;
+      text-decoration: none
+
+    }
+
+  </style>
+</head>
+
+  <div class="main">
+    <p class="sign" align="center">Sign up</p>
+    <form class="form1">
+      <div class = "badger">
+      <img src="badger.png" style="width:43%; height:70%; border-radius:0%; margin-right:8%; "></img>
+    </div>
+      <a class="submit"> <a href="register_user_view.php" type="submit" name="submit">Create an account</a>
+        
+      <!-- <p class="submit" align="center"><a href="register_user_view.php">Create an account</p> -->
+      <p class="forgot" align="center"><a href="login_user_view.php"> Already have an account? </p>
+
+
+  </div>
+</body>
+
+</html>

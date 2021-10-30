@@ -1,0 +1,439 @@
+<html>
+	<head>
+		<style>
+		/*지우면안됨*/
+	  body {
+	    position: relative;
+	    top: 17px;
+	    left: 1px;
+	  }
+
+	  /*지우면안됨*/
+	  .ltop {
+	    display: inline-block;
+	    margin-top: 40px;
+	    margin-left: 145px;
+	    font-size: 18px;
+	    font-weight: bold;
+	    color: #c62917
+	  }
+	  /*지우면안됨*/
+	  .top {
+	    width:200%;
+	    position: absolute;
+	    display: inline;
+	    line-height: 5px;
+	    list-style: none;
+	    color: #666;
+	    font-family: 'source_sans_proregular';
+	    font-size: 12px;
+	    letter-spacing: -0.5px;
+	    display: list-item;
+	    margin-left: 279px;
+	  }
+
+	  /*지우면안됨*/
+	  .top li {
+	    float: left;
+	    text-align: center;
+	    margin-left: 50px
+	  }
+
+
+	  /*지우면안됨*/
+	  .top a {
+	    position: absolute;
+	    display: inline;
+	    text-decoration: none;
+	    color: #666;
+	    padding: 14px 20px 14px 20px;
+	    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	    margin-right: -20px;
+	    position: relative;
+	    top: -10px;
+	    line-height: 25px;
+	    color: #737373;
+	    font-size: 20px;
+	    text-align: center;
+	    letter-spacing: normal;
+	    font-weight: bold;
+	  }
+	/*지우면안됨*/
+	  .account {
+	    position: relative;
+	    padding: 20px 0;
+	    box-sizing: border-box;
+	    font-size: 0;
+	    left:980px;
+	    top:15px;
+
+
+	  }
+	/*지우면안됨*/
+	  .account img {
+	    width: 25px;
+	    height: 25px;
+	    margin-right: 18px;
+	  }
+	/*지우면안됨*/
+	  span.top>li {
+	    margin-left: 60px;
+	  }
+
+
+
+
+
+
+
+
+
+		  #gpa-wrap table {
+		    border-collapse: collapse;
+		    margin-bottom: 10px;
+		  }
+		  #gpa-wrap table tr:nth-child(odd){
+		    background: #f2f2f2;
+		  }
+		  #gpa-wrap table tr td {
+		    padding: 5px;
+		  }
+
+		#output table, th, td {
+			border:1px solid black;
+			}
+
+		</style>
+
+		<style type="text/css">
+
+		.hidden {
+	  display: none;
+	}
+
+
+
+
+.whole {
+	position: relative;
+	bottom:-8%;
+	left:35%;
+	border-radius: 2%;
+}
+
+.ltop {
+  text-decoration: none;
+}
+
+
+
+
+	</style>
+	</head>
+
+<body>
+	<script type="text/javascript">
+
+		function toggleTable() {
+	  document.getElementById("myTable").classList.toggle("hidden");
+	}
+	</script>
+
+	<script type="text/javascript">
+		function calcGPA(){
+			let score = 0, total_credits = 0;
+
+			for (let i = 0; i < 5; i++){
+				var grade = document.getElementById("Grades" + i);
+				var credit = document.getElementById("Credits" + i);
+				var title = document.getElementById("Title" + i);
+
+				var grade_value = parseFloat(grade.value);
+				var credit_value = parseFloat(credit.value);
+				var calc = "" + grade_value + "*" + credit_value + " = " + (grade_value * credit_value);
+				total_credits += credit_value;
+
+
+				score += (grade_value * credit_value);
+				document.getElementById("title" + i).innerHTML = title.value;
+				document.getElementById("credits" + i).innerHTML = credit.value;
+				document.getElementById("calculation" + i).innerHTML = calc;
+			}
+
+			score = score / total_credits;
+			toggleTable()
+			document.getElementById("total").innerHTML = total_credits;
+			document.getElementById("final").innerHTML = score.toFixed(2);
+		}
+</script>
+
+<div>
+  <a href = "first.html" class="ltop">
+    With You
+  </a>
+
+	<span class="top" style ="width:900px">
+		<li><a href="first.html">Board</a></li>
+		<li><a href="calendar.html">Time table</a></li>
+		<li><a href="Lecture.html">Lecture</a></li>
+		<li><a href="gpa.html">GPA calculator</a></li>
+		<li><a href="http://www.facebook.com">Friend</a></li>
+	</span>
+
+	<span class="account">
+		<a href="http://www.google.com"><img src="email.png"></a> <a href="http://www.google.com"><img src="user.png"></a>
+		<span>
+				<!--여기까지 디폴트 -->
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class = "whole"> <!-- ㄴㅐ가 씀 -->
+	<div id = "gpa-wrap">
+	<table>
+	<tr>
+		<th>Course Title</th>
+		<th>Grade</th>
+		<th>Credits</th>
+	</tr>
+		<tr>
+			<td>
+	<form method="Course0">
+  		<input type="text" id="Title0" name="fname", style="margin-top: 15px;">
+
+  	</td>
+  	<td>
+		<select id="Grades0">
+			<option value=0.0>Grade</option>
+			<option value=4.0, label = "A">A</option>
+			<option value=3.5, title = "AB">AB</option>
+			<option value=3.0, title = "B">B</option>
+			<option value=2.5, title = "BC">BC</option>
+			<option value=2.0, title = "C">C</option>
+			<option value=1.0, title = "D">D</option>
+			<option value=0.0, title = "F">F</option>
+		</select>
+	</td>
+	<td>
+		<select id="Credits0">
+			<option value=0.0>Credits</option>
+			<option value=5.0>5</option>
+			<option value=4.0>4</option>
+			<option value=3.0>3</option>
+			<option value=2.0>2</option>
+			<option value=1.0>1</option>
+		</select>
+		</div>
+
+	</form>
+</td>
+</tr>
+
+		<tr>
+			<td>
+
+
+
+
+	<form method="Course1">
+  		<input type="text" id="Title1" name="fname", style="margin-top: 15px;">
+
+  	</td>
+  	<td>
+		<select id="Grades1">
+			<option value=0.0>Grade</option>
+			<option value=4.0, title = "A">A</option>
+			<option value=3.5, title = "AB">AB</option>
+			<option value=3.0, title = "B">B</option>
+			<option value=2.5, title = "BC">BC</option>
+			<option value=2.0, title = "C">C</option>
+			<option value=1.0, title = "D">D</option>
+			<option value=0.0, title = "F">F</option>
+		</select>
+	</td>
+	<td>
+		<select id="Credits1">
+			<option value=0.0>Credits</option>
+			<option value=5.0>5</option>
+			<option value=4.0>4</option>
+			<option value=3.0>3</option>
+			<option value=2.0>2</option>
+			<option value=1.0>1</option>
+		</select>
+		</div>
+
+	</form>
+</td>
+</tr>
+
+		<tr>
+			<td>
+	<form method="Course2">
+  		<input type="text" id="Title2" name="fname", style="margin-top: 15px;">
+
+  	</td>
+  	<td>
+		<select id="Grades2">
+			<option value=0.0>Grade</option>
+			<option value=4.0, title = "A">A</option>
+			<option value=3.5, title = "AB">AB</option>
+			<option value=3.0, title = "B">B</option>
+			<option value=2.5, title = "BC">BC</option>
+			<option value=2.0, title = "C">C</option>
+			<option value=1.0, title = "D">D</option>
+			<option value=0.0, title = "F">F</option>
+		</select>
+	</td>
+	<td>
+		<select id="Credits2">
+			<option value=0.0>Credits</option>
+			<option value=5.0>5</option>
+			<option value=4.0>4</option>
+			<option value=3.0>3</option>
+			<option value=2.0>2</option>
+			<option value=1.0>1</option>
+		</select>
+		</div>
+
+	</form>
+</td>
+</tr>
+
+		<tr>
+			<td>
+	<form method="Course3">
+  		<input type="text" id="Title3" name="fname", style="margin-top: 15px;">
+
+  	</td>
+  	<td>
+		<select id="Grades3">
+			<option value=0.0>Grade</option>
+			<option value=4.0, title = "A">A</option>
+			<option value=3.5, title = "AB">AB</option>
+			<option value=3.0, title = "B">B</option>
+			<option value=2.5, title = "BC">BC</option>
+			<option value=2.0, title = "C">C</option>
+			<option value=1.0, title = "D">D</option>
+			<option value=0.0, title = "F">F</option>
+		</select>
+	</td>
+	<td>
+		<select id="Credits3">
+			<option value=0.0>Credits</option>
+			<option value=5.0>5</option>
+			<option value=4.0>4</option>
+			<option value=3.0>3</option>
+			<option value=2.0>2</option>
+			<option value=1.0>1</option>
+		</select>
+		</div>
+
+	</form>
+</td>
+</tr>
+
+		<tr>
+			<td>
+	<form method="Course4">
+  		<input type="text" id="Title4" name="fname", style="margin-top: 15px;">
+
+  	</td>
+  	<td>
+		<select id="Grades4">
+			<option value=0.0>Grade</option>
+			<option value=4.0, title = "A">A</option>
+			<option value=3.5, title = "AB">AB</option>
+			<option value=3.0, title = "B">B</option>
+			<option value=2.5, title = "BC">BC</option>
+			<option value=2.0, title = "C">C</option>
+			<option value=1.0, title = "D">D</option>
+			<option value=0.0, title = "F">F</option>
+		</select>
+	</td>
+	<td>
+		<select id="Credits4">
+			<option value=0.0>Credits</option>
+			<option value=5.0>5</option>
+			<option value=4.0>4</option>
+			<option value=3.0>3</option>
+			<option value=2.0>2</option>
+			<option value=1.0>1</option>
+		</select>
+		</div>
+
+	</form>
+</td>
+</tr>
+</table>
+</div>
+
+
+	<button onclick="calcGPA()">Calculate</button> <br><br>
+
+	<div id = "output">
+	<table class="hidden", id="myTable">
+		<tr>
+			<th>Course</th>
+			<th>Credits</th>
+			<th>Calculation</th>
+		</tr>
+
+		<tr>
+			<td id="title0">1</td>
+			<td id="credits0">1</td>
+			<td id="calculation0">1</td>
+		</tr>
+
+		<tr>
+			<td id="title1">1</td>
+			<td id="credits1">1</td>
+			<td id="calculation1">1</td>
+		</tr>
+
+		<tr>
+			<td id="title2">1</td>
+			<td id="credits2">1</td>
+			<td id="calculation2">1</td>
+		</tr>
+
+		<tr>
+			<td id="title3">1</td>
+			<td id="credits3">1</td>
+			<td id="calculation3">1</td>
+		</tr>
+
+		<tr>
+			<td id="title4">1</td>
+			<td id="credits4">1</td>
+			<td id="calculation4">1</td>
+		</tr>
+
+		<tr>
+			<td>Total Credits: </td>
+			<td></td>
+			<td id="total">1</td>
+		</tr>
+
+		<tr>
+			<td>GPA: </td>
+			<td></td>
+			<td id="final">1</td>
+		</tr>
+
+
+
+	</table>
+	</div>
+</div>
+</body>
+</html>
